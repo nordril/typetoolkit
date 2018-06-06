@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <Authors>Indril</Authors>
+    <Company>Indril</Company>
+    <PackageTags>Type Toolkit Utility TypeTheory</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</PackageLicenseUrl>
+    <Copyright>Indril</Copyright>
+    <Description>Extensions for dealing with, dissecting, and constructing types, analyzing generics, type-theoretical operations.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>
