@@ -15,7 +15,7 @@ namespace Indril.TypeToolkit
         /// </summary>
         /// <param name="obj">The object for which to get the hash.</param>
         /// <param name="fields">The fields of the object.</param>
-        internal static int DefaultHash(this object obj, params object[] fields)
+        public static int DefaultHash(this object obj, params object[] fields)
         {
             //From https://stackoverflow.com/a/263416, with modifications.
             unchecked
