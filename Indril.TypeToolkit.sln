@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indril.TypeToolkit", "Indril.TypeToolkit\Indril.TypeToolkit.csproj", "{4C6269F2-C72B-489C-A144-3E4F9E829197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indril.TypeToolkit", "Indril.TypeToolkit\Indril.TypeToolkit.csproj", "{4C6269F2-C72B-489C-A144-3E4F9E829197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indril.TypeToolkit.Tests", "Indril.TypeToolkit.Tests\Indril.TypeToolkit.Tests.csproj", "{9028C289-912A-4953-B532-184184A34B16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4C6269F2-C72B-489C-A144-3E4F9E829197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C6269F2-C72B-489C-A144-3E4F9E829197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C6269F2-C72B-489C-A144-3E4F9E829197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9028C289-912A-4953-B532-184184A34B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9028C289-912A-4953-B532-184184A34B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9028C289-912A-4953-B532-184184A34B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9028C289-912A-4953-B532-184184A34B16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

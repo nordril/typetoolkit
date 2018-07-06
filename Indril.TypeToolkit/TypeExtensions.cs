@@ -37,7 +37,7 @@ namespace Indril.TypeToolkit
             if (type.IsGenericType)
             {
                 ret.Append('<');
-                ret.Append(string.Join(", ", type.GetGenericArguments().Select(a => a.GetGenericName())));
+                ret.Append(string.Join(", ", type.GetGenericArguments().Select(a => a.GetGenericName(useFullName))));
                 ret.Append('>');
             }
 
