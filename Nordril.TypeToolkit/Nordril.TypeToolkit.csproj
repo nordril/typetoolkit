@@ -1,17 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyVersion>1.3.9.0</AssemblyVersion>
-    <Authors>Indril</Authors>
-    <Company>Indril</Company>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <Authors>Nordril Technologies</Authors>
+    <Company>Nordril Technologies</Company>
     <PackageTags>Type Toolkit Utility TypeTheory</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</PackageLicenseUrl>
-    <Copyright>Indril</Copyright>
+    <Copyright>Nordril Technologies</Copyright>
     <Description>Extensions for dealing with, dissecting, and constructing types, analyzing generics, type-theoretical operations.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.3.1</Version>
+    <Version>5.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

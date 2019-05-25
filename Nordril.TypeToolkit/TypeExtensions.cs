@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Indril.TypeToolkit
+namespace Nordril.TypeToolkit
 {
     /// <summary>
     /// Extension methods for <see cref="Type"/>.
@@ -59,5 +59,10 @@ namespace Indril.TypeToolkit
         /// <param name="type">The type.</param>
         public static Type GetGenericTypeDefinitionSafe(this Type type)
             => type.IsGenericType ? type.GetGenericTypeDefinition() : type;
+
+        /*public static TypeLike ToTreeRepresentation(this Type type)
+        {
+
+        }*/
     }
 }

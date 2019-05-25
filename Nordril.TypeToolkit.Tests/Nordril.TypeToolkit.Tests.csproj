@@ -5,7 +5,7 @@
 
     <IsPackable>false</IsPackable>
 
-    <AssemblyVersion>1.0.14.0</AssemblyVersion>
+    <AssemblyVersion>1.0.18242.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Indril.TypeToolkit\Indril.TypeToolkit.csproj" />
+    <ProjectReference Include="..\Nordril.TypeToolkit\Nordril.TypeToolkit.csproj" />
   </ItemGroup>
 
 </Project>

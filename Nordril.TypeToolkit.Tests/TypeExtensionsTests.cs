@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace Indril.TypeToolkit.Tests
+namespace Nordril.TypeToolkit.Tests
 {
     public static class TypeExtensionsTests
     {

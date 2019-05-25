@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indril.TypeToolkit", "Indril.TypeToolkit\Indril.TypeToolkit.csproj", "{4C6269F2-C72B-489C-A144-3E4F9E829197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nordril.TypeToolkit", "Nordril.TypeToolkit\Nordril.TypeToolkit.csproj", "{4C6269F2-C72B-489C-A144-3E4F9E829197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indril.TypeToolkit.Tests", "Indril.TypeToolkit.Tests\Indril.TypeToolkit.Tests.csproj", "{9028C289-912A-4953-B532-184184A34B16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nordril.TypeToolkit.Tests", "Nordril.TypeToolkit.Tests\Nordril.TypeToolkit.Tests.csproj", "{9028C289-912A-4953-B532-184184A34B16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
