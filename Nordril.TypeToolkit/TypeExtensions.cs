@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace Nordril.TypeToolkit
@@ -45,12 +46,18 @@ namespace Nordril.TypeToolkit
         }
 
         /// <summary>
-        /// A safe version of <see cref="Type.GetGenericArguments"/> which returns an empty array
-        /// if the type is not generic.
+        /// A safe version of <see cref="Type.GetGenericArguments"/> which returns an empty array if the type is not generic.
         /// </summary>
         /// <param name="type">The type.</param>
         public static Type[] GetGenericArgumentsSafe(this Type type)
             => (type.IsGenericType || type.IsGenericTypeDefinition) ? type.GetGenericArguments() : new Type[0];
+
+        /// <summary>
+        /// A safe version of <see cref="MethodInfo.GetGenericArguments"/> which returns an empty array if the type is not generic.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        public static Type[] GetGenericArgumentsSafe(this MethodInfo type)
+            => (type.IsGenericMethod || type.IsGenericMethodDefinition) ? type.GetGenericArguments() : new Type[0];
 
         /// <summary>
         /// A safe version of <see cref="Type.GetGenericTypeDefinition"/> which returns the type

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 using Xunit;
 
@@ -40,6 +42,22 @@ namespace Nordril.TypeToolkit.Tests
         }
 
         [Fact]
+        public static void GetGenericArgumentsMethodInfoReturnsTypeArguments()
+        {
+            var mi = typeof(TestType).GetMethod(nameof(TestType.First), BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod);
+
+            Assert.Single(mi.GetGenericArgumentsSafe());
+            Assert.True(mi.GetGenericArgumentsSafe()[0].IsGenericParameter);
+
+            mi = mi.MakeGenericMethod(typeof(int));
+            Assert.Single(mi.GetGenericArgumentsSafe());
+            Assert.Equal(typeof(int), mi.GetGenericArgumentsSafe()[0]);
+
+            mi = typeof(string).GetMethod(nameof(string.GetEnumerator), BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod);
+            Assert.Equal(new Type[0], mi.GetGenericArgumentsSafe());
+        }
+
+        [Fact]
         public static void GetGenericDefinition()
         {
             Assert.Equal(typeof(IList<>), typeof(IList<int>).GetGenericTypeDefinitionSafe());
@@ -57,6 +75,11 @@ namespace Nordril.TypeToolkit.Tests
             Assert.Equal("List<Int32>", typeof(List<int>).GetGenericName());
             Assert.Equal("List<List<List<Int32>>>", typeof(List<List<List<int>>>).GetGenericName());
             Assert.Equal("System.Collections.Generic.List<System.Collections.Generic.List<System.Collections.Generic.List<System.Int32>>>", typeof(List<List<List<int>>>).GetGenericName(true));
+        }
+
+        private class TestType
+        {
+            public T First<T>(IEnumerable<T> x) => x.First();
         }
     }
 }
