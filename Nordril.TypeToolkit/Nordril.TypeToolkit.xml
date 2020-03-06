@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nordril.TypeToolkit</name>
+    </assembly>
+    <members>
+        <member name="T:Nordril.TypeToolkit.TypeExtensions">
+            <summary>
+            Extension methods for <see cref="T:System.Type"/>.
+            </summary>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.GetBaseName(System.Type)">
+            <summary>
+            Gets the type's base name, i.e. its name without any generic parameters.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.GetBaseFullName(System.Type)">
+            <summary>
+            Gets the type's base full name, i.e. its full name (namespace-qualified) name without any generic parameters.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.GetGenericName(System.Type,System.Boolean)">
+            <summary>
+            Gets the type's generic name, which is equal to its base name for non-generic types,
+            and equal to the angle-bracket-syntax in C#.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="useFullName">If true, the type's full (namespace-qualified) name will be used, otherwise the type's name.</param>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.GetGenericArgumentsSafe(System.Type)">
+            <summary>
+            A safe version of <see cref="M:System.Type.GetGenericArguments"/> which returns an empty array if the type is not generic.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.GetGenericArgumentsSafe(System.Reflection.MethodInfo)">
+            <summary>
+            A safe version of <see cref="M:System.Reflection.MethodInfo.GetGenericArguments"/> which returns an empty array if the type is not generic.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.GetGenericTypeDefinitionSafe(System.Type)">
+            <summary>
+            A safe version of <see cref="M:System.Type.GetGenericTypeDefinition"/> which returns the type
+            itself if <paramref name="type"/> isn't a generic type.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Nordril.TypeToolkit.TypeExtensions.UnifiableWith(System.Type,System.Type,System.Collections.Generic.IList{System.Type}@)">
+            <summary>
+            A looser form of <see cref="M:System.Type.IsAssignableFrom(System.Type)"/> which also returns true if the open type <paramref name="type"/> implements the open interface or open base type <paramref name="that"/>.
+            </summary>
+            <param name="type">The first type which should be assignable to the second.</param>
+            <param name="that">The second type which should be assignable from the first.</param>
+            <param name="instantations">If <paramref name="type"/>is an open generic type and <paramref name="that"/> is closed, this list contains the types to which the type-parameters of <paramref name="type"/> have to be instantiated. Otherwise, this is null.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

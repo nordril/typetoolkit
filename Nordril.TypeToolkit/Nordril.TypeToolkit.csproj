@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>5.2.0.0</AssemblyVersion>
     <Authors>Nordril Technologies</Authors>
     <Company>Nordril Technologies</Company>
     <PackageTags>Type Toolkit Utility TypeTheory</PackageTags>
@@ -11,11 +11,15 @@
     <Copyright>Nordril Technologies</Copyright>
     <Description>Extensions for dealing with, dissecting, and constructing types, analyzing generics, type-theoretical operations.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>5.1.0</Version>
+    <Version>5.2.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netcoreapp2.1\Indril.TypeToolkit.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\H\source\repos\typeToolkit\Nordril.TypeToolkit\Nordril.TypeToolkit.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
